@@ -1,0 +1,14 @@
+/* TEAM */
+INTIO Interiors
+Site: https://intiointeriors.com
+Location: Pune & Mumbai, India
+
+/* THANKS */
+Clients and Partners
+
+/* SITE */
+Last update: 2025/01/15
+Standards: HTML5, CSS3
+Components: Bootstrap, jQuery
+Software: Visual Studio Code
+

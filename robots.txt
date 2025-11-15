@@ -1,8 +1,14 @@
-# robots.txt for INTIO Interiors
+# robots.txt for INTIO Interiors (intiointeriors)
 # https://intiointeriors.com/robots.txt
 
 User-agent: *
 Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /service.html
+Allow: /contact.html
+Allow: /portfolio.html
+Allow: /packages.html
 
 # Disallow admin and private areas (if any)
 Disallow: /admin/
