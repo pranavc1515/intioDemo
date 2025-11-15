@@ -2154,6 +2154,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .th-menu-wrapper .mobile-logo svg {
   max-width: 185px;
 }
+.th-menu-wrapper .mobile-logo img {
+  max-width: 150px;
+  height: auto;
+  width: auto;
+}
 .th-menu-wrapper .th-menu-toggle {
   border: none;
   font-size: 22px;
