@@ -109,8 +109,8 @@ The site is optimized for these search terms:
 - "intio interiors mumbai"
 
 ## Contact Information
-- Phone: +91 75075 93066, +91 98765 43210
-- Email: info@intiointeriors.com
+- Phone: +917507593066
+- Email: Interiorsintio@gmail.com
 - Location: Andheri West, Mumbai, Maharashtra 400053
 
 ## Monitoring
