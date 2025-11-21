@@ -12,7 +12,7 @@
     <priority>1.0</priority>
   </url>
   
-  <!-- Main Pages -->
+  <!-- Main Navigation Pages -->
   <url>
     <loc>https://intiointeriors.com/about.html</loc>
     <lastmod>2025-01-15</lastmod>
@@ -55,43 +55,7 @@
     <priority>0.8</priority>
   </url>
   
-  <url>
-    <loc>https://intiointeriors.com/gallery.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Service Pages -->
-  <url>
-    <loc>https://intiointeriors.com/service-design-styling.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://intiointeriors.com/service-turnkey-solutions.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://intiointeriors.com/service-virtual-consultation.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://intiointeriors.com/service-3d-renders.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Design Type Pages -->
+  <!-- Design Type Pages (Navbar Submenu) -->
   <url>
     <loc>https://intiointeriors.com/living-room.html</loc>
     <lastmod>2025-01-15</lastmod>
@@ -107,14 +71,14 @@
   </url>
   
   <url>
-    <loc>https://intiointeriors.com/dining-room.html</loc>
+    <loc>https://intiointeriors.com/kids-room.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://intiointeriors.com/kids-room.html</loc>
+    <loc>https://intiointeriors.com/dining-room.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -162,64 +126,33 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Blog Pages -->
+  <!-- Service Pages (Navbar Submenu) -->
   <url>
-    <loc>https://intiointeriors.com/blog.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://intiointeriors.com/blog-grid.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://intiointeriors.com/blog-grid-sidebar.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Project Pages -->
-  <url>
-    <loc>https://intiointeriors.com/project.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://intiointeriors.com/project-details.html</loc>
+    <loc>https://intiointeriors.com/service-design-styling.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Additional Pages -->
-  <url>
-    <loc>https://intiointeriors.com/testimonial.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://intiointeriors.com/team.html</loc>
+    <loc>https://intiointeriors.com/service-turnkey-solutions.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://intiointeriors.com/faq.html</loc>
+    <loc>https://intiointeriors.com/service-virtual-consultation.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://intiointeriors.com/service-3d-renders.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   
 </urlset>
-

@@ -264,10 +264,24 @@
         "latitude": "18.5204",
         "longitude": "73.8567"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": ["Pune", "Mumbai", "Maharashtra", "India"]
-      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Pune"
+        },
+        {
+          "@type": "City",
+          "name": "Mumbai"
+        },
+        {
+          "@type": "State",
+          "name": "Maharashtra"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ],
       "serviceType": [
         "Interior Design Styling",
         "Turnkey Solutions",
@@ -283,11 +297,6 @@
       "priceRange": "$$",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "itemReviewed": {
-          "@type": "InteriorDesignBusiness",
-          "@id": "https://intiointeriors.com#business",
-          "name": "INTIO Interiors"
-        },
         "ratingValue": "4.9",
         "reviewCount": "150",
         "bestRating": "5",
