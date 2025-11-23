@@ -56,7 +56,9 @@
 
     // Build email body (plain text)
     let body = '';
-    if (formData.name) body += `Name: ${formData.name}\n`;
+    if (formData.name || formData['popup_name']) {
+      body += `Name: ${formData.name || formData['popup_name']}\n`;
+    }
     if (email) body += `Email: ${email}\n`;
     if (formData.phone || formData.number || formData['popup_phone']) {
       body += `Phone: ${formData.phone || formData.number || formData['popup_phone']}\n`;
@@ -76,8 +78,9 @@
     html += '<h2 style="color: #ff833b; border-bottom: 2px solid #ff833b; padding-bottom: 10px;">New Contact Form Submission</h2>';
     html += '<table style="width: 100%; border-collapse: collapse; margin-top: 20px;">';
     
-    if (formData.name) {
-      html += `<tr><td style="padding: 8px 0; font-weight: bold; width: 150px;">Name:</td><td style="padding: 8px 0;">${escapeHtml(formData.name)}</td></tr>`;
+    if (formData.name || formData['popup_name']) {
+      const name = formData.name || formData['popup_name'];
+      html += `<tr><td style="padding: 8px 0; font-weight: bold; width: 150px;">Name:</td><td style="padding: 8px 0;">${escapeHtml(name)}</td></tr>`;
     }
     if (email) {
       html += `<tr><td style="padding: 8px 0; font-weight: bold;">Email:</td><td style="padding: 8px 0;"><a href="mailto:${email}">${escapeHtml(email)}</a></td></tr>`;
@@ -145,6 +148,13 @@
         isValid = false;
       }
     });
+    
+    // Also check if name field exists (either name or popup_name)
+    const $nameField = $form.find('[name="name"], [name="popup_name"]');
+    if ($nameField.length && !$nameField.val()) {
+      $nameField.addClass('is-invalid');
+      isValid = false;
+    }
 
     // Validate email format
     const $emailField = $form.find('[name="email"], [name="popup_email"]');

@@ -13756,9 +13756,9 @@ span.select2-selection.select2-selection--single:focus {
 .wc-proceed-to-checkout .th-btn:hover {
   color: var(--white-color);
 }
-.contact-form {
+/* .contact-form {
   margin-right: 80px;
-}
+} */
 @media (max-width: 1199px) {
   .contact-form {
     margin: 0;

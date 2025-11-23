@@ -635,7 +635,7 @@
         <div class="th-mobile-menu">
           <ul>
             <li class="">
-              <a href="home-interior.html">Home</a>
+              <a href="index.html">Home</a>
               <!-- <ul class="sub-menu">
                 <li><a href="home-interior.html">Home Home Interio</a></li>
                 <li><a href="home-architecture.html">Home architecture</a></li>
@@ -3359,6 +3359,7 @@
           <div class="quote-popup-form">
             <form action="#" method="POST" class="contact-form ajax-contact" id="quoteForm">
             <div class="quote-popup-title">
+              <div class="quote-popup-title-icon"></div>
               <h2>Talk to an<br>Interior Designer</h2>
             </div>
             <div class="quote-form-fields">
@@ -3455,18 +3456,22 @@
         max-width: 520px;
         width: 100%;
         max-height: 95vh;
-        overflow: visible;
+        overflow: hidden;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
         z-index: 100000;
         transform: scale(0.9);
         transition: transform 0.3s ease;
         animation: popupSlideIn 0.3s ease forwards;
+        display: flex;
+        flex-direction: column;
       }
       .quote-popup-content-inner {
         max-height: 95vh;
         overflow-y: auto;
         overflow-x: hidden;
         padding: 0;
+        flex: 1;
+        -webkit-overflow-scrolling: touch;
       }
       .quote-popup-modal[style*="flex"] .quote-popup-content {
         transform: scale(1);
@@ -3520,7 +3525,16 @@
       /* Title */
       .quote-popup-title {
         text-align: center;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .quote-popup-title-icon {
+        width: 12px;
+        height: 12px;
+        background: #ff833b;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        display: block;
       }
       .quote-popup-title h2 {
         font-size: 32px;
@@ -3535,7 +3549,7 @@
       .quote-form-fields {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 22px;
       }
       
       /* Form Group */
@@ -3544,6 +3558,7 @@
         width: 100%;
         z-index: 1;
         isolation: isolate;
+        margin-bottom: 0;
       }
       .quote-form-group:focus-within,
       .quote-form-group:hover {
@@ -3557,7 +3572,7 @@
       .quote-form-control,
       .quote-form-select {
         width: 100%;
-        padding: 16px 50px 16px 18px;
+        padding: 17px 42px 17px 18px;
         border: 1.5px solid #e0e0e0;
         border-radius: 12px;
         font-size: 15px;
@@ -3569,6 +3584,9 @@
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
+        box-sizing: border-box;
+        line-height: 1.5;
+        text-align: left;
       }
       .quote-form-control:focus,
       .quote-form-select:focus {
@@ -3591,7 +3609,7 @@
       /* Select Dropdown */
       .quote-form-select {
         cursor: pointer;
-        padding-right: 50px;
+        padding-right: 42px;
         position: relative;
         z-index: 1;
       }
@@ -3618,8 +3636,7 @@
       }
       
       /* Form Icons */
-      .quote-form-icon,
-      .quote-select-icon {
+      .quote-form-icon {
         position: absolute;
         right: 18px;
         top: 50%;
@@ -3629,18 +3646,46 @@
         pointer-events: none;
         transition: color 0.3s ease;
         z-index: 2;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
       }
       .quote-select-icon {
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999999;
         font-size: 14px;
+        pointer-events: none;
+        transition: color 0.3s ease;
+        z-index: 3;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
       }
       .quote-form-group:focus-within .quote-form-icon,
       .quote-form-group:focus-within .quote-select-icon {
         color: #684DF4;
       }
+      /* Ensure select icon is always visible and properly positioned */
+      .quote-form-group:has(select) .quote-select-icon {
+        display: flex;
+        opacity: 1;
+      }
       
       /* Submit Button */
       .quote-form-submit {
-        margin-top: 10px;
+        margin-top: 8px;
+        width: 100%;
       }
       .quote-submit-btn {
         width: 100%;
@@ -3678,6 +3723,19 @@
         text-align: center;
         font-size: 14px;
         margin-top: 15px;
+        padding: 10px;
+        border-radius: 8px;
+        min-height: 20px;
+      }
+      .quote-popup-form .form-messages.success {
+        color: #28a745;
+        background: #d4edda;
+        border: 1px solid #c3e6cb;
+      }
+      .quote-popup-form .form-messages.error {
+        color: #dc3545;
+        background: #f8d7da;
+        border: 1px solid #f5c6cb;
       }
       
       /* Scrollbar Styling */
@@ -3696,16 +3754,20 @@
         background: #999;
       }
       
-      /* Ensure select dropdowns can overflow */
+      /* Ensure select dropdowns can overflow when focused */
       .quote-popup-content {
-        overflow: visible !important;
+        overflow: hidden;
       }
       .quote-popup-content-inner {
         position: relative;
       }
       .quote-form-group:has(select:focus),
       .quote-form-group:has(select:active) {
-        overflow: visible !important;
+        overflow: visible;
+      }
+      /* Allow dropdown to overflow container when open */
+      .quote-popup-content:has(.quote-form-group:has(select:focus)) {
+        overflow: visible;
       }
       
       /* Responsive Design */
@@ -3733,8 +3795,16 @@
         }
         .quote-form-control,
         .quote-form-select {
-          padding: 15px 45px 15px 16px;
+          padding: 16px 40px 16px 16px;
           font-size: 15px;
+        }
+        .quote-form-icon {
+          right: 16px;
+          font-size: 15px;
+        }
+        .quote-select-icon {
+          right: 16px;
+          font-size: 13px;
         }
         .quote-submit-btn {
           padding: 16px 25px;
@@ -3779,13 +3849,16 @@
         }
         .quote-form-control,
         .quote-form-select {
-          padding: 14px 42px 14px 15px;
+          padding: 15px 38px 15px 15px;
           font-size: 14px;
         }
-        .quote-form-icon,
-        .quote-select-icon {
+        .quote-form-icon {
           right: 15px;
           font-size: 15px;
+        }
+        .quote-select-icon {
+          right: 15px;
+          font-size: 13px;
         }
         .quote-submit-btn {
           padding: 15px 20px;
