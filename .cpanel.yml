@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/intioint/public_html/
-    - /bin/rsync -av --delete ~/repositories/intioDemo/ $DEPLOYPATH
