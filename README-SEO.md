@@ -111,7 +111,8 @@ The site is optimized for these search terms:
 ## Contact Information
 - Phone: +917507593066
 - Email: Interiorsintio@gmail.com
-- Location: Andheri West, Mumbai, Maharashtra 400053
+- Main Office: AWFIS - west block Amanora mall Pune
+- Branch Office: Intio interiors shed 1 - ground floor Tulja Bhawani Mandir Rd, Bibvewadi Pune
 
 ## Monitoring
 - Set up Google Analytics
